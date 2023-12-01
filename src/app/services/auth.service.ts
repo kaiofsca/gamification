@@ -20,7 +20,7 @@ export class AuthService {
       senha: senha,
     };
 
-    return this.http.post<any>(chaves.GameApi, body, { headers }).pipe(
+    return this.http.post<any>(chaves.Login, body, { headers }).pipe(
       map((response) => {
         this.autorizarApp(response.token);
         return response;

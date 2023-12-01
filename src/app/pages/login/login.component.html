@@ -1,10 +1,22 @@
-<form (ngSubmit)="submitForm()" autocomplete="off">
-  <input [(ngModel)]="ra" name="username" placeholder="Username" />
-  <input
-    [(ngModel)]="senha"
-    name="password"
-    type="password"
-    placeholder="Password"
-  />
-  <button mat-button type="submit">Login</button>
-</form>
+<section class="page">
+  <form class="formLogin" (ngSubmit)="submitForm()" autocomplete="off">
+    <img src="assets/images/ceubgame.svg" alt="" />
+    <input
+      [(ngModel)]="ra"
+      name="ra"
+      placeholder="RA"
+      [ngClass]="{ error: raError }"
+    />
+    <input
+      [(ngModel)]="senha"
+      name="password"
+      type="{{ showPassword ? 'text' : 'password' }}"
+      placeholder="Senha"
+      [ngClass]="{ error: senhaError }"
+    />
+    <mat-icon (click)="passwordVisibility()" class="visibility">
+      {{ showPassword ? "visibility" : "visibility_off" }}
+    </mat-icon>
+    <button class="btn" type="submit">ENTRAR</button>
+  </form>
+</section>

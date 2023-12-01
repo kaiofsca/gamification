@@ -1,0 +1,18 @@
+
+.menu-bar {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1C013F;
+  padding: 1rem 0 1rem 0;
+}
+
+a {
+  color: #fff;
+}
+
+.menu-bar a.active mat-icon {
+  color: #fffd54;
+}

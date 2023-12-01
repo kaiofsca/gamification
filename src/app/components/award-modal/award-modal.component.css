@@ -1,0 +1,47 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #800080;
+  border: 2px solid #fffd54;
+  padding: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h2  {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fffd54;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+.points-coins {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 1rem;
+  gap: 2rem;
+}
+
+.points {
+  text-align: center;
+}
+
+.coins {
+  text-align: center;
+}

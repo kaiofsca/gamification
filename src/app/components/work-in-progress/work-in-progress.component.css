@@ -1,0 +1,36 @@
+.wip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background-color: #1C013F;
+}
+
+.wip-content {
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+mat-icon {
+  width: 5rem;
+  height: 5rem;
+  font-size: 5rem;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}

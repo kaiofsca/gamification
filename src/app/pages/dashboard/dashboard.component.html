@@ -1,1 +1,27 @@
-<p>dashboard works!</p>
+<section class="page">
+  <div class="tile-user">
+    <div class="tile1">
+      <img class="user-image" src="assets/images/silva.jpg" alt="" />
+      <span> <mat-icon>attach_money</mat-icon> : 250 </span>
+    </div>
+    <div class="tile2">
+      <h2>Anderson Silva</h2>
+      <p>Superior de Tecnologia em Análise e Desenvolvimentos de Sistemas</p>
+    </div>
+  </div>
+  <div class="awards-content">
+    <div class="infos">
+      <span> <mat-icon>stars</mat-icon> Nível : 2 </span>
+      <span> <mat-icon>trending_up</mat-icon> XP : 7859 </span>
+    </div>
+    <div class="awards">
+      <ul>
+        <li *ngFor="let award of awards" (click)="openAwardModal(award)">
+          <span><mat-icon>{{ award.icon }}</mat-icon></span>
+          <h3>{{ award.name }}</h3>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <app-menu-bar />
+</section>

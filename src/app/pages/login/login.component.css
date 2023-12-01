@@ -1,0 +1,86 @@
+body {
+  font-family: sans-serif;
+  color: #023047;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #1c013f 65.1%,
+    #670c51 100%,
+    #e1c3da 100%,
+    #530357 100%
+  );
+}
+
+.formLogin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  margin-bottom: 6rem;
+  padding: 40px;
+  gap: 1rem;
+}
+
+input {
+  padding: 15px;
+  font-size: 14px;
+  border: 0.1rem solid #530357;
+  color: #ffffff;
+  background-color: transparent;
+  margin-top: 5px;
+  border-radius: 4px;
+  transition: all linear 160ms;
+  outline: none;
+}
+input:focus {
+  border: 1px solid #f72585;
+}
+
+a {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #555;
+  text-align: end;
+  transition: all linear 160ms;
+}
+a:hover {
+  color: #f72585;
+}
+
+.visibility {
+  color: #fff;
+  position: absolute;
+  bottom: 7.3rem;
+  right: 3.5rem;
+}
+
+.btn {
+  background-color: #f72585;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 14px;
+  font-weight: 600;
+  border: none !important;
+  transition: all linear 160ms;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #5106ff;
+}
+
+.error {
+  border: 2px solid red;
+}
